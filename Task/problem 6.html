@@ -1,0 +1,39 @@
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="data"> </p>
+
+<script>
+    var array = [[['firstName', 'Vasanth'], ['lastName', 'Raja'],
+      ['age', 24], ['role', 'JSWizard']], [['firstName', 'Sri'], 
+      ['lastName', 'Devi'], ['age', 28], ['role', 'Coder']]];
+      function transformEmployeeData(arr) {
+           var tranformEmployeeList = [];
+           var obj1={};
+           var obj2={};
+           var a1=arr[0];
+           var a2=arr[1];
+           for(var i=0;i<arr[0].length;i++){
+              for(var j=0;j<1;j++){
+                  obj1[a1[i][j]]=a1[i][j+1];
+              }
+           }
+           for(var i=0;i<arr[1].length;i++){
+              for(var j=0;j<1;j++){
+                  obj2[a2[i][j]]=a2[i][j+1];
+              }
+           }
+           tranformEmployeeList=[obj1,obj2]
+          
+         return tranformEmployeeList;
+         }
+     var arr=transformEmployeeData(array);
+     console.log(arr);    
+</script>
+
+
+</body>
+</html>

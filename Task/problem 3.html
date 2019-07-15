@@ -1,0 +1,25 @@
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="data"> </p>
+
+<script>
+    var object = {name: "ISRO", age: 35, role: "Scientist"};
+        
+    function convertListToObject(obj) 
+        {
+            document.getElementById("data").innerHTML=Object.entries(obj);
+            console.log(Object.entries(obj));
+        }
+
+        convertListToObject(object);
+  
+    
+</script>
+
+
+</body>
+</html>

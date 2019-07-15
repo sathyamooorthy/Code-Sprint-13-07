@@ -1,0 +1,47 @@
+<html>
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <p id="data"> </p>
+
+
+
+
+<script>
+
+    var array = [["make", "Ford"], ["model", "Mustang"], ["year", 1964]];
+    function change(arr)
+    {
+         let obj = {};
+         for(let i=0;i<arr.length;i++)
+         {
+             obj[arr[i][0]]=arr[0][1]
+            
+            }
+            return obj
+         
+    }
+    var a= change(array)
+    console.log(a)
+
+
+</script>
+
+<!-- <script>
+    var array = [["make", "Ford"], ["model", "Mustang"], ["year", 1964]];
+    
+    function fromListToObject(arr) {
+        console.log(Object.fromEntries(arr))
+          
+    }
+    document.getElementById("data").innerHTML=Object.fromEntries(array)
+    fromListToObject(array)
+  
+    
+</script> -->
+
+
+</body>
+</html>
